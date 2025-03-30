@@ -1,12 +1,35 @@
 {
 	"name": "@codeeditorland/cosmosdbgraph",
 	"displayName": "Azure Cosmos DB Graph (deprecated)",
+	"version": "0.0.1",
+	"private": false,
 	"description": "View Cosmos DB Graph databases in Azure.",
+	"keywords": [
+		"codeeditorland",
+		"land",
+		"playform"
+	],
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/LandCosmosDBGraph#readme",
+	"bugs": {
+		"url": "HTTPS://GitHub.Com/CodeEditorLand/LandCosmosDBGraph/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+HTTPS://github.com/CodeEditorLand/LandCosmosDBGraph.git"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Source 🖋️ Open 👐🏻",
+		"email": "Source/Open@Editor.Land",
+		"url": "HTTPS://Editor.Land"
+	},
+	"type": "module",
 	"main": "./main",
 	"scripts": {
 		"all": "npm i && npm run lint && npm test",
 		"build": "tsc",
 		"compile": "tsc -watch",
+		"prepublishOnly": "Build 'Source/**/*.ts'",
 		"webpack": "npm run build && gulp webpack-dev",
 		"webpack-prod": "npm run build && gulp webpack-prod",
 		"webpack-profile": "webpack --profile --json --mode production > webpack-stats.json && echo Use http://webpack.github.io/analyse to analyze the stats"
@@ -104,6 +127,7 @@
 		"socket.io-client": "4.8.1"
 	},
 	"devDependencies": {
+		"@playform/build": "0.2.1",
 		"@types/d3": "7.4.3",
 		"@types/fs-extra": "11.0.4",
 		"@types/node": "22.13.14",
@@ -115,6 +139,9 @@
 		"ms-azuretools.vscode-cosmosdb",
 		"ms-vscode.azure-account"
 	],
+	"publishConfig": {
+		"access": "public"
+	},
 	"icon": "resources/cosmos.png",
 	"galleryBanner": {
 		"color": "#3c3c3c",
