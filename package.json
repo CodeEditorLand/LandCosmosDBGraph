@@ -127,7 +127,7 @@
 		"socket.io-client": "4.8.1"
 	},
 	"devDependencies": {
-		"@playform/build": "0.2.1",
+		"@playform/build": "0.2.2",
 		"@types/d3": "7.4.3",
 		"@types/fs-extra": "11.0.4",
 		"@types/node": "22.14.0",
